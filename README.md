@@ -11,4 +11,4 @@ How to use:
 Example:
 - cargo run -- " " "_" "This is a test"
 - Replace space (" ") with underscore("_") in the text ("This is a test").
-- The output will be This_is_a_test
+- The output will be this_is_a_test

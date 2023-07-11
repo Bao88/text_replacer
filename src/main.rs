@@ -13,7 +13,7 @@ fn main() {
         println!("replaceTo: {}", replace_to);
         println!("Original text: {}", text);
 
-        println!("New Text: {}", text.replace(replace_from, replace_to));
+        println!("New Text: {}", text.replace(replace_from, replace_to).to_lowercase());
     } else {
         let message: &str;
         if args.len() > 3 {
