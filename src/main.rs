@@ -15,7 +15,13 @@ fn main() {
 
         println!("New Text: {}", text.replace(replace_from, replace_to));
     } else {
-        println!("There are too many arguments:");
+        let message: &str;
+        if args.len() > 3 {
+            message = "There are too many arguments:";
+        } else {
+            message = "There are too few arguments!";
+        }
+        println!("{}", message);
         for arg in &args {
             println!("{}", arg)
         }
